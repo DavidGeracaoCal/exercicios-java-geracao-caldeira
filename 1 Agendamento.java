@@ -5,6 +5,6 @@ public class Agendamento {
         LocalDate base = LocalDate.of(2025, 6, 1);
         int dias = 7;
         LocalDate novaData = base.plusDays(dias * 2 - 3);
-        System.out.println(novaData.getDayOfMonth());
+        System.out.println(novaData.getDayOfMonth()); // Saída: 12
     }
 }
