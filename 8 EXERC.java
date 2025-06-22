@@ -1,13 +1,15 @@
-public class Main {
+public class Usuario {
+    String nome;
+    int idade;
+
+    public Usuario(String n, int i) {
+        nome = n;
+        idade = i;
+    }
+
     public static void main(String[] args) {
-        int notificacoes = 0;
-        for (int i = 1; i <= 5; i++) {
-            if (i % 2 == 0) {
-                notificacoes += 2;
-            } else {
-                notificacoes++;
-            }
-        }
-        System.out.println(notificacoes); // 7
+        Usuario u = new Usuario("Maria", 25);
+        System.out.println("Nome: " + u.nome);
+        System.out.println("Idade: " + u.idade); // Usuário u = novo Usuário("John", 25);
     }
 }
